@@ -71,7 +71,7 @@ ul {
 
 
 #main-img{
-    content: url("./assets/images/image-web-3-desktop.jpg");
+    content: url("./images/image-web-3-desktop.jpg");
     width: 100%;
     grid-column: span 2;
     margin-right: 10px;
@@ -150,7 +150,7 @@ ul {
         top:6%;
     }
     #main-img{
-        content: url("/assets/images/image-web-3-mobile.jpg");
+        content: url("./images/icon-menu.svg");
         width: 100%;
     }
     .tech-images{
