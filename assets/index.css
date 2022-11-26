@@ -71,7 +71,7 @@ ul {
 
 
 #main-img{
-    content: url("/assets/images/image-web-3-desktop.jpg");
+    content: url("./assets/images/image-web-3-desktop.jpg");
     width: 100%;
     grid-column: span 2;
     margin-right: 10px;
