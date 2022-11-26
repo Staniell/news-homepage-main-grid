@@ -52,7 +52,7 @@ ul {
 .container{
     width: 90%;
     margin: auto;
-    margin-bottom: 8rem;
+    margin-bottom: 25vh;
     margin-top:2rem;
 }
 
@@ -62,9 +62,12 @@ ul {
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 2rem;
     column-gap: 1.8rem;
-    height: 50rem;
+    height:130vh;
 }
 
+#mobile-menu, #mobile-logo{
+    display: none;
+}
 
 
 #main-img{
@@ -74,32 +77,15 @@ ul {
     margin-right: 10px;
 }
 
-
-/* 
-.main-grid>*{
-    border: black solid 2px;
-} */
-
-/* .web-info1{
-    font-size: 12px;
-} */
-
 .web-info2{
     display: flex;
     flex-direction: column;
 }
 
-/* .web-info2>div{
-    background-color: red;
-} */
-
 .web-info2>*{
     flex:1;
     font-size: 16px;
-    /* border: 2px solid black; */
 }
-
-
 
 .web-info1>h1{
     margin: 0;
@@ -108,51 +94,18 @@ ul {
 
 .new-section{
     grid-row: span 2;
+    max-height: 70vh;
 }
 
+
 .tech-info{
-    /* margin-top: 3rem; */
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    height: 13rem;
-    margin-top: 1rem;
+    grid-template-columns: 2fr 2fr;
 }
 
 .tech-images{
-    height: 10.625rem;
-}
-
-/* .tech-info>*{
-    border: black solid 3px;
-} */
-
-/* .tech-info>div{
-    display: flex;
-    flex-direction: column;
-    height: 250px;
-} */
-
-/* .tech-info :nth-child(1){
-    grid-row: span 3;
-} */
-
-/* .tech-img{
-    width: 70%;
-    height: 50%;
-} */
-
-/* .tech-info :nth-child(3){
-    margin-bottom: 30px;
-} */
-
-.tech-details>h1{
-    font-size: 2rem;
-}
-.tech-details>h2{
-    font-size: 1.25rem;
-}
-.tech-details>p{
-    font-size: 1rem;
+    height: 90%;
+    width: 90%;
 }
 
 
@@ -173,6 +126,68 @@ ul {
     color:hsl(36, 100%, 99%);
 }
 
-/* #tech-3{
-    margin-left:25px;
-} */
+
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+}
+
+@media only screen and (max-width: 430px){
+    nav{
+        display: none;
+    }
+    #mobile-logo{
+        display: block;
+        margin: 25px;
+    }
+    #mobile-menu{
+        display:block;
+        position:absolute;
+        right:7%;
+        top:6%;
+    }
+    #main-img{
+        content: url("/assets/images/image-web-3-mobile.jpg");
+        width: 100%;
+    }
+    .tech-images{
+        width: 70%;
+        height: 80%;
+    }
+    .tech-info{
+        width: fit-content;
+        height: min-content;
+    }
+
+    .tech-info>div>h2{
+        font-size: 16px;
+    }
+
+    .tech-info>div>h1{
+        font-size: 18px;
+    }
+
+    .tech-info>div>p{
+        font-size: 10px;
+    }
+
+
+    .new-section{
+        max-height: 100vh;
+    }
+	.main-grid{
+        display: flex;
+        flex-direction: column;
+        height:300vh;
+    }
+    .main-grid :nth-child(1){order: 1;}
+    .main-grid :nth-child(2){order: 2;}
+    .main-grid :nth-child(3){order: 1;}
+    .main-grid :nth-child(4){order: 1;}
+    .main-grid :nth-child(5){order: 3;}
+    .main-grid :nth-child(6){order: 3;}
+    .main-grid :nth-child(7){order: 3;}
+}
