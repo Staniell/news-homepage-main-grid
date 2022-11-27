@@ -102,10 +102,10 @@ img{
     font-size: 3.25rem;
 }
 
-
+/* 
 .tech-info>*{
     border: black solid 3px;
-}
+} */
 
 .tech-info{
     display: grid;
